@@ -1,0 +1,886 @@
+
+/* ------------- General ------------- */
+@import url(https://fonts.googleapis.com/css?family=Lora&subset=latin,latin-ext,cyrillic);
+@font-face {
+	font-family: "cs-ctrl-boundary";
+	src: url("/font/cs-ctrl-boundary.eot");
+	src: url("/font/cs-ctrl-boundary.eot#iefix") format("embedded-opentype"),
+			url("/font/cs-ctrl-boundary.woff") format("woff"),
+			url("/font/cs-ctrl-boundary.ttf") format("truetype"),
+			url("/font/cs-ctrl-boundary.svg#boundary") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.csslider1 {
+  display: inline-block;
+  position: relative;
+  max-width: 990px;
+  
+  
+
+  width: 100%;
+}
+.csslider1,
+.csslider1 *,
+.csslider1 *:after,
+.csslider1 *:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider1 > .cs_anchor {
+  display: none;
+}
+.csslider1 > ul {
+  position: relative;
+  z-index: 1;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0;
+  
+  overflow: hidden;
+  white-space: nowrap;
+}
+.csslider1 > ul > .cs_skeleton {
+  width: 100%;
+  visibility: hidden;
+  font-size: 0px;
+  line-height: 0;
+}
+
+.csslider1 > ul > .slide.img img {
+  width: 100%;
+}
+
+
+
+.csslider1 > ul > .slide.img a {
+  font-size: 0pt;
+  color: transparent;
+}
+.csslider1 > ul > .slide {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  font-size: initial;
+  line-height: normal;
+  white-space: normal;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.csslider1 .cs_engine{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  font-size: 0pt;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.csslider1 > ul > li.img,
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext,
+.csslider1 > .cs_bullets,
+.csslider1 > .cs_play_pause {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ------------- /General Styles ------------- */
+
+/* ------------- General Arrows ------------- */
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0;
+  z-index: -1;
+}
+.csslider1 > .cs_arrowprev {
+  left: 0;
+}
+.csslider1 > .cs_arrownext {
+  right: 0;
+}
+
+.csslider1 > .slide:checked ~ .cs_arrowprev > label,
+.csslider1 > .slide:checked ~ .cs_arrownext > label {
+  opacity: 0;
+  z-index: -1;
+}
+
+
+
+.csslider1 > #cs_slide1_0:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_pause1_0:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_slide1_0:checked ~ .cs_arrownext > label.num1,
+.csslider1 > #cs_pause1_0:checked ~ .cs_arrownext > label.num1, 
+.csslider1 > #cs_slide1_1:checked ~ .cs_arrowprev > label.num0,
+.csslider1 > #cs_pause1_1:checked ~ .cs_arrowprev > label.num0,
+.csslider1 > #cs_slide1_1:checked ~ .cs_arrownext > label.num2,
+.csslider1 > #cs_pause1_1:checked ~ .cs_arrownext > label.num2, 
+.csslider1 > #cs_slide1_2:checked ~ .cs_arrowprev > label.num1,
+.csslider1 > #cs_pause1_2:checked ~ .cs_arrowprev > label.num1,
+.csslider1 > #cs_slide1_2:checked ~ .cs_arrownext > label.num3,
+.csslider1 > #cs_pause1_2:checked ~ .cs_arrownext > label.num3, 
+.csslider1 > #cs_slide1_3:checked ~ .cs_arrowprev > label.num2,
+.csslider1 > #cs_pause1_3:checked ~ .cs_arrowprev > label.num2,
+.csslider1 > #cs_slide1_3:checked ~ .cs_arrownext > label.num4,
+.csslider1 > #cs_pause1_3:checked ~ .cs_arrownext > label.num4, 
+.csslider1 > #cs_slide1_4:checked ~ .cs_arrowprev > label.num3,
+.csslider1 > #cs_pause1_4:checked ~ .cs_arrowprev > label.num3,
+.csslider1 > #cs_slide1_4:checked ~ .cs_arrownext > label.num0,
+.csslider1 > #cs_pause1_4:checked ~ .cs_arrownext > label.num0 {
+  opacity: 1;
+  z-index: 5;
+}
+
+
+@-webkit-keyframes arrow {
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
+}
+@keyframes arrow {
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
+}
+
+
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num4,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num1 {
+  -webkit-animation: arrow 40000ms infinite -2000ms;
+  animation: arrow 40000ms infinite -2000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num0,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num2 {
+  -webkit-animation: arrow 40000ms infinite 6000ms;
+  animation: arrow 40000ms infinite 6000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num1,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num3 {
+  -webkit-animation: arrow 40000ms infinite 14000ms;
+  animation: arrow 40000ms infinite 14000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num2,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num4 {
+  -webkit-animation: arrow 40000ms infinite 22000ms;
+  animation: arrow 40000ms infinite 22000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_arrowprev > label.num3,
+.csslider1 > #cs_play1:checked ~ .cs_arrownext > label.num0 {
+  -webkit-animation: arrow 40000ms infinite 30000ms;
+  animation: arrow 40000ms infinite 30000ms;
+}
+
+
+.csslider1 > .slide:checked ~ .cs_arrowprev > label,
+.csslider1 > .slide:checked ~ .cs_arrownext > label,
+.csslider1 > .pause:checked ~ .cs_arrowprev > label,
+.csslider1 > .pause:checked ~ .cs_arrownext > label {
+  -webkit-animation: none;
+  animation: none;
+}
+
+
+/* ------------- /General Arrows ------------- */
+
+/* ------------- General Bullets ------------- */
+.csslider1 > .cs_bullets {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 6;
+  font-size: 0;
+  line-height: 8pt;
+  text-align: center;
+}
+.csslider1 > .cs_bullets > div {
+  margin-left: -50%;
+  width: 100%;
+}
+.csslider1 > .cs_bullets > label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.csslider1 > .cs_bullets > label > .cs_thumb {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  line-height: 0;
+  left: -58px;
+  top: -48px;
+}
+.csslider1 > .cs_bullets > label > .cs_thumb > img {
+  max-width: none;
+}
+/* ------------- /General Bullets ------------- */
+
+/* ------------- General Description ------------- */
+.csslider1 > .cs_description {
+  z-index: 3;
+}
+.csslider1 > .cs_description a,
+.csslider1 > .cs_description a:visited,
+.csslider1 > .cs_description a:active {
+  color: inherit;
+}
+.csslider1 > .cs_description a:hover {
+  text-decoration: none;
+}
+.csslider1 > .cs_description > label {
+  position: absolute;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  max-width: 50%;
+  left: 0;
+}
+.csslider1 > .cs_description > label > span {
+  vertical-align: top;
+}
+.csslider1 > .cs_description > label span {
+  display: inline-block;
+}
+/* ------------- /General Description ------------- */
+
+/* ------------- General Play Pause ------------- */
+.csslider1 > .cs_play_pause {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+}
+.csslider1 > .cs_play_pause > label {
+  position: absolute;
+  cursor: pointer;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause,
+.csslider1 > .slide:checked ~ .cs_play_pause > .cs_play,
+.csslider1 > .pause:checked ~ .cs_play_pause > .cs_play {
+  display: block;
+  z-index: 5;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_play,
+.csslider1 > .slide:checked ~ .cs_play_pause > .cs_pause,
+.csslider1 > .pause:checked ~ .cs_play_pause > .cs_pause {
+  display: none;
+  z-index: -1;
+}
+
+
+
+@-webkit-keyframes pauseChange {
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
+}
+@keyframes pauseChange {
+  0%, 19.99% { opacity: 1; z-index: 5; }
+  20%, 100%  { opacity: 0; z-index: -1; }
+}
+
+
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause.num0 {
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: pauseChange 40000ms infinite -2000ms;
+  animation: pauseChange 40000ms infinite -2000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause.num1 {
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: pauseChange 40000ms infinite 6000ms;
+  animation: pauseChange 40000ms infinite 6000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause.num2 {
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: pauseChange 40000ms infinite 14000ms;
+  animation: pauseChange 40000ms infinite 14000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause.num3 {
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: pauseChange 40000ms infinite 22000ms;
+  animation: pauseChange 40000ms infinite 22000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_play_pause > .cs_pause.num4 {
+  opacity: 0;
+  z-index: -1;
+  -webkit-animation: pauseChange 40000ms infinite 30000ms;
+  animation: pauseChange 40000ms infinite 30000ms;
+}
+
+
+.csslider1 > .slide:checked ~ .cs_play_pause > .cs_pause,
+.csslider1 > .pause:checked ~ .cs_play_pause > .cs_pause {
+  -webkit-animation: none;
+  animation: none;
+}
+
+
+/* ------------- /General Play Pause ------------- */
+
+/* ------------- Effect ------------- */
+.csslider1 > ul {
+  overflow: hidden;
+}
+
+.csslider1 > ul > .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: -webkit-transform 2000ms ease, opacity 2000ms ease;
+  transition: -webkit-transform 2000ms ease, transform 2000ms ease, opacity 2000ms ease;
+
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+
+.csslider1 > #cs_slide1_0:checked ~ ul > .slide.num0,
+.csslider1 > #cs_pause1_0:checked ~ ul > .slide.num0,
+.csslider1 > #cs_slide1_1:checked ~ ul > .slide.num1,
+.csslider1 > #cs_pause1_1:checked ~ ul > .slide.num1,
+.csslider1 > #cs_slide1_2:checked ~ ul > .slide.num2,
+.csslider1 > #cs_pause1_2:checked ~ ul > .slide.num2,
+.csslider1 > #cs_slide1_3:checked ~ ul > .slide.num3,
+.csslider1 > #cs_pause1_3:checked ~ ul > .slide.num3,
+.csslider1 > #cs_slide1_4:checked ~ ul > .slide.num4,
+.csslider1 > #cs_pause1_4:checked ~ ul > .slide.num4 {
+  opacity: 1;
+  z-index: 2;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+
+@-webkit-keyframes fade-in1 {
+  0%, 25%, 100%  {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  5%, 20%  {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  0%, 19.999%  { z-index: 2; }
+  20.001%, 100%  { z-index: 1; }
+}
+@keyframes fade-in1 {
+  0%, 25%, 100%  {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  5%, 20%  {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  0%, 19.999%  { z-index: 2; }
+  20.001%, 100%  { z-index: 1; }
+}
+
+.csslider1 > #cs_play1:checked ~ ul > .slide.num0 {
+  -webkit-animation: fade-in1 40000ms infinite -2000ms;
+  animation: fade-in1 40000ms infinite -2000ms;
+}
+.csslider1 > #cs_play1:checked ~ ul > .slide.num1 {
+  -webkit-animation: fade-in1 40000ms infinite 6000ms;
+  animation: fade-in1 40000ms infinite 6000ms;
+}
+.csslider1 > #cs_play1:checked ~ ul > .slide.num2 {
+  -webkit-animation: fade-in1 40000ms infinite 14000ms;
+  animation: fade-in1 40000ms infinite 14000ms;
+}
+.csslider1 > #cs_play1:checked ~ ul > .slide.num3 {
+  -webkit-animation: fade-in1 40000ms infinite 22000ms;
+  animation: fade-in1 40000ms infinite 22000ms;
+}
+.csslider1 > #cs_play1:checked ~ ul > .slide.num4 {
+  -webkit-animation: fade-in1 40000ms infinite 30000ms;
+  animation: fade-in1 40000ms infinite 30000ms;
+}
+
+
+
+.csslider1 > #cs_play1:checked ~ ul > .slide,
+.csslider1 > .pause:checked ~ ul > .slide {
+  -webkit-transition: none;
+  transition: none;
+}
+
+
+/* ------------- /Effect ------------- */
+
+/* ------------- Template Show on hover ------------- */
+.csslider1 > .cs_play_pause {
+  -webkit-transition: .5s opacity 0s ease;
+  transition: .5s opacity 0s ease;
+}
+.csslider1 > .cs_arrowprev {
+  -webkit-transition: .5s opacity .15s ease;
+  transition: .5s opacity .15s ease;
+}
+.csslider1 > .cs_arrownext {
+  -webkit-transition: .5s opacity .3s ease;
+  transition: .5s opacity .3s ease;
+}
+.csslider1 > .cs_arrowprev,
+.csslider1 > .cs_arrownext,
+.csslider1 > .cs_play_pause {
+  opacity: 0;
+}
+.csslider1:hover > .cs_arrowprev,
+.csslider1:hover > .cs_arrownext,
+.csslider1:hover > .cs_play_pause {
+  opacity: 1;
+}
+/* ------------- /Template Show on hover ------------- */
+
+
+/* ------------- Template Arrows ------------- */
+.csslider1 {
+  overflow: hidden;
+}
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  margin-top: -30px;
+  width: 35px;
+  height: 0;
+  padding: 30px 0;
+}
+.csslider1 > .cs_arrowprev {
+  left: 35px;
+}
+.csslider1 > .cs_arrownext {
+  right: 35px;
+}
+.csslider1 > .cs_arrowprev > label {
+  right: 0;
+}
+.csslider1 > .cs_arrownext > label {
+  left: 0;
+}
+
+.csslider1 > .cs_arrowprev > label span,
+.csslider1 > .cs_arrownext > label span {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #2aab36;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+.csslider1 > .cs_arrowprev > label span:after {
+  content: '\e800';
+}
+.csslider1 > .cs_arrownext > label span:after {
+  content: '\e801';
+}
+.csslider1 > .cs_arrowprev > label span:after,
+.csslider1 > .cs_arrownext > label span:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font: 18px "cs-ctrl-boundary";
+  height: 18px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* IE10+ hack */
+_:-ms-input-placeholder, :root .csslider1 > .cs_arrowprev > label span:after {
+  line-height: 35px;
+}
+_:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label span:after {
+  line-height: 35px;
+}
+
+
+.csslider1 > .cs_arrowprev > label,
+.csslider1 > .cs_arrownext > label {
+  -webkit-transition: 300ms padding 300ms ease, 300ms margin-top 300ms ease;
+  transition: 300ms padding 300ms ease, 300ms margin-top 300ms ease;
+}
+.csslider1 > .cs_arrowprev:hover > label {
+  padding: 34px 0;
+  margin-top: -34px;
+  -webkit-transition: 300ms padding ease, 300ms margin-top ease;
+  transition: 300ms padding ease, 300ms margin-top ease;
+}
+.csslider1 > .cs_arrownext:hover > label {
+  padding: 34px 0;
+  margin-top: -34px;
+  -webkit-transition: 300ms padding ease, 300ms margin-top ease;
+  transition: 300ms padding ease, 300ms margin-top ease;
+}
+
+
+
+.csslider1 > .cs_arrowprev img {
+  position: absolute;
+  top: 0;
+  left: -136px;
+  border: 10px solid #2aab36;
+  -webkit-transition: 300ms left ease;
+  transition: 300ms left ease;
+}
+.csslider1 > .cs_arrownext img {
+  position: absolute;
+  top: 0;
+  right: -136px;
+  border: 10px solid #2aab36;
+  -webkit-transition: 300ms right ease;
+  transition: 300ms right ease;
+}
+
+.csslider1 > .cs_arrowprev:hover img {
+  left: 35px;
+  -webkit-transition: 300ms left 300ms ease;
+  transition: 300ms left 300ms ease;
+}
+.csslider1 > .cs_arrownext:hover img {
+  right: 35px;
+  -webkit-transition: 300ms right 300ms ease;
+  transition: 300ms right 300ms ease;
+}
+
+/* ------------- /Template Arrows ------------- */
+
+/* ------------- Template Play Pause ------------- */
+.csslider1 > .cs_play_pause {
+  top: auto;
+  left: auto;
+  right: 10px;
+  bottom: 10px;
+}
+.csslider1 > .cs_play_pause > label {
+  position: relative;
+  text-decoration: none;
+  position: absolute;
+  left: -18px;
+  top: -18px;
+  
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2aab36;
+}
+.csslider1 > .cs_play_pause > .cs_play:after {
+  display: block;
+  content: '\e802';
+  font-size: 16px;
+  line-height: 21px;
+}
+.csslider1 > .cs_play_pause > .cs_pause:after {
+  display: block;
+  content: '\e803';
+  font-size: 12px;
+  line-height: 21px;
+}
+.csslider1 > .cs_play_pause > label:after{
+  font-family: "cs-ctrl-boundary";
+  text-align: center;
+  color: #fff;
+}
+/* ------------- /Template Play Pause ------------- */
+
+/* ------------- Template Bullets ------------- */
+.csslider1 > .cs_bullets {
+  bottom: 10px;
+  width: auto;
+  text-align: right;
+  line-height: 1;
+  max-width: 45%;
+  right: 33px;
+  left: auto;
+}
+
+
+.csslider1 > .cs_bullets > label > .cs_thumb {
+  margin-top: -6px;
+  margin-left: 3px;
+  -webkit-transition:
+    opacity 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275),
+    visibility 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+  transition:
+    opacity 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275),
+    visibility 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.csslider1 > .cs_bullets > label:hover > .cs_thumb {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.csslider1 > .cs_bullets > label {
+  margin: 0 6px;
+  margin-top: 5px;
+  padding: 9px;
+  border-radius: 50%;
+  background: #2aab36;
+}
+
+.csslider1 > .cs_bullets > label > .cs_point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2px;
+  margin-top: -2px;
+  background: transparent;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.csslider1 > .cs_bullets > label:hover > .cs_point,
+
+.csslider1 > #cs_slide1_0:checked ~ .cs_bullets > label.num0 > .cs_point,
+.csslider1 > #cs_pause1_0:checked ~ .cs_bullets > label.num0 > .cs_point,
+.csslider1 > #cs_slide1_1:checked ~ .cs_bullets > label.num1 > .cs_point,
+.csslider1 > #cs_pause1_1:checked ~ .cs_bullets > label.num1 > .cs_point,
+.csslider1 > #cs_slide1_2:checked ~ .cs_bullets > label.num2 > .cs_point,
+.csslider1 > #cs_pause1_2:checked ~ .cs_bullets > label.num2 > .cs_point,
+.csslider1 > #cs_slide1_3:checked ~ .cs_bullets > label.num3 > .cs_point,
+.csslider1 > #cs_pause1_3:checked ~ .cs_bullets > label.num3 > .cs_point,
+.csslider1 > #cs_slide1_4:checked ~ .cs_bullets > label.num4 > .cs_point,
+.csslider1 > #cs_pause1_4:checked ~ .cs_bullets > label.num4 > .cs_point {
+  background: #fff;
+}
+
+
+
+
+@keyframes bullet {
+  0%, 19.99%  { background: #fff; }
+  20%, 100% { background: transparent; }
+}
+@-webkit-keyframes bullet {
+  0%, 19.99%  { background: #fff; }
+  20%, 100% { background: transparent; }
+}
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num0 > .cs_point,
+.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num0 > .cs_point {
+  -webkit-animation: bullet 40000ms infinite -2000ms;
+  animation: bullet 40000ms infinite -2000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num1 > .cs_point,
+.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num1 > .cs_point {
+  -webkit-animation: bullet 40000ms infinite 6000ms;
+  animation: bullet 40000ms infinite 6000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num2 > .cs_point,
+.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num2 > .cs_point {
+  -webkit-animation: bullet 40000ms infinite 14000ms;
+  animation: bullet 40000ms infinite 14000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num3 > .cs_point,
+.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num3 > .cs_point {
+  -webkit-animation: bullet 40000ms infinite 22000ms;
+  animation: bullet 40000ms infinite 22000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label.num4 > .cs_point,
+.csslider1 > #cs_pause1:checked ~ .cs_bullets > label.num4 > .cs_point {
+  -webkit-animation: bullet 40000ms infinite 30000ms;
+  animation: bullet 40000ms infinite 30000ms;
+}
+
+
+
+.csslider1 > #cs_play1:checked ~ .cs_bullets > label > .cs_point,
+.csslider1 > .pause:checked ~ .cs_bullets > label > .cs_point {
+  -webkit-transition: none;
+  transition: none;
+}
+
+
+.csslider1 > .slide:checked ~ .cs_bullets > label > .cs_point,
+.csslider1 > .pause:checked ~ .cs_bullets > label > .cs_point {
+  -webkit-animation: none;
+  animation: none;
+}
+
+
+/* ------------- /Template Bullets ------------- */
+
+/* ------------- Template Description ------------- */
+.csslider1 > .cs_description > label {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  background: #2aab36;
+  max-width: 50%;
+
+  bottom: 0;
+  top: auto;
+}
+
+.csslider1 > .cs_description > label > .cs_descr {
+  text-align: left;
+  
+}
+
+
+.csslider1 > .cs_description > label > .cs_title {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+
+.csslider1 > #cs_slide1_0:checked ~ .cs_description > .num0,
+.csslider1 > #cs_pause1_0:checked ~ .cs_description > .num0,
+.csslider1 > #cs_slide1_1:checked ~ .cs_description > .num1,
+.csslider1 > #cs_pause1_1:checked ~ .cs_description > .num1,
+.csslider1 > #cs_slide1_2:checked ~ .cs_description > .num2,
+.csslider1 > #cs_pause1_2:checked ~ .cs_description > .num2,
+.csslider1 > #cs_slide1_3:checked ~ .cs_description > .num3,
+.csslider1 > #cs_pause1_3:checked ~ .cs_description > .num3,
+.csslider1 > #cs_slide1_4:checked ~ .cs_description > .num4,
+.csslider1 > #cs_pause1_4:checked ~ .cs_description > .num4 {
+  opacity: 1;
+  z-index: 4;
+  -webkit-transition: .5s opacity .2s ease, .5s -webkit-transform .2s ease;
+  transition: .5s opacity .2s ease, .5s -webkit-transform .2s ease, .5s transform .2s ease;
+    
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.csslider1 > .slide:checked ~ .cs_description > label {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  
+
+}
+
+
+
+
+@-webkit-keyframes cs_description {
+  1.25%, 16.24%  {
+    opacity: 1;
+    z-index: 4;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  0%, 17.5%, 100%  {
+    opacity: 0;
+    z-index: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+  }
+}
+@keyframes cs_description {
+  1.25%, 16.24%  {
+    opacity: 1;
+    z-index: 4;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  0%, 17.5%, 100%  {
+    opacity: 0;
+    z-index: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+  }
+}
+
+
+.csslider1 > #cs_play1:checked ~ .cs_description > .num0 {
+  -webkit-animation: cs_description 40000ms infinite 0ms;
+  animation: cs_description 40000ms infinite 0ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_description > .num1 {
+  -webkit-animation: cs_description 40000ms infinite 8000ms;
+  animation: cs_description 40000ms infinite 8000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_description > .num2 {
+  -webkit-animation: cs_description 40000ms infinite 16000ms;
+  animation: cs_description 40000ms infinite 16000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_description > .num3 {
+  -webkit-animation: cs_description 40000ms infinite 24000ms;
+  animation: cs_description 40000ms infinite 24000ms;
+}
+.csslider1 > #cs_play1:checked ~ .cs_description > .num4 {
+  -webkit-animation: cs_description 40000ms infinite 32000ms;
+  animation: cs_description 40000ms infinite 32000ms;
+}
+
+
+
+
+.csslider1 > #cs_play1:checked ~ .cs_description > label > .cs_title,
+.csslider1 > #cs_play1:checked ~ .cs_description > label > .cs_descr,
+.csslider1 > .pause:checked ~ .cs_description > label > .cs_title,
+.csslider1 > .pause:checked ~ .cs_description > label > .cs_descr {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.csslider1 > .play:checked ~ .cs_description > label > .cs_title,
+.csslider1 > .play:checked ~ .cs_description > label > .cs_descr
+.csslider1 > .pause:checked ~ .cs_description > label > .cs_title,
+.csslider1 > .pause:checked ~ .cs_description > label > .cs_descr {
+  -webkit-animation: none;
+  animation: none;
+}
+
+
+
+/* ------------- /Template Description ------------- */
+/* hide description & bullets on mobile devices */
+@media
+only screen and (max-width: 480px),
+only screen and (-webkit-max-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (   max--moz-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (     -o-max-device-pixel-ratio: 2/1)    and (max-width: 480px),
+only screen and (        max-device-pixel-ratio: 2)      and (max-width: 480px),
+only screen and (                max-resolution: 192dpi) and (max-width: 480px),
+only screen and (                max-resolution: 2dppx)  and (max-width: 480px) { 
+  .csslider1 > .cs_description,
+  .csslider1 > .cs_bullets {
+    display: none;
+  }
+}
