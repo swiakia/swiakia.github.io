@@ -316,7 +316,7 @@ table a:hover, .coma:hover {
 
     .rating_selection label:before {
         display: inline-block;
-        content: "?";
+        content: "★";
         font-size: 1.8em;
         color: #e9cd10;
     }
