@@ -253,8 +253,7 @@ table a:hover, .coma:hover {
     text-align: center;
 }
 
-.cont-footer {
-    border-top: 3px solid #000;
+.cont-footer {    
     min-height: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -300,7 +299,9 @@ table a:hover, .coma:hover {
 .breadc {
     margin-top: 30px;
     font-size: .8em;
-    border-top: 1px dashed #EAEAEA;    
+    border-top: 1px dashed #EAEAEA;   
+    padding: 10px 0 10px 0;
+    border-bottom: 2px dashed #EAEAEA; 
 }
 
 .rating_selection input[type=radio], .rating_selection label:first-of-type, .rating_selection span {
