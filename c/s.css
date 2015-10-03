@@ -742,3 +742,7 @@ h2 a {
 .well img{
     max-width: 14em;
 }
+
+.f{
+    border:3px solid #000;
+}
