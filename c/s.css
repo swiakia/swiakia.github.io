@@ -300,6 +300,7 @@ table a:hover, .coma:hover {
 .breadc {
     margin-top: 30px;
     font-size: .8em;
+    border-top: 1px dashed #EAEAEA;    
 }
 
 .rating_selection input[type=radio], .rating_selection label:first-of-type, .rating_selection span {
