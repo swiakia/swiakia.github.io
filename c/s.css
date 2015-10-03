@@ -283,10 +283,6 @@ table a:hover, .coma:hover {
     margin-top: 20px;
 }
 
-.otName {
-    font-size: 1.5em;
-}
-
 .otStar {
     color: #e9cd10;
     font-size: 1.2em;
@@ -518,6 +514,7 @@ ul.grid {
     top: 2px;
     left: 5px;
 }
+
 
 /*Listing*/
 div.prz:hover {
