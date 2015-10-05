@@ -254,8 +254,7 @@ table a:hover, .coma:hover {
 
 .cont-footer {    
     min-height: 30px;   
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px;    
         border-top: 1px dotted #EAEAEA;
             margin: 30px 0 0 0;
 }
@@ -741,6 +740,10 @@ h2 a {
 
 .well img{
     max-width: 14em;
+}
+
+.ss{
+    padding-bottom: 10px;
 }
 
 .f{
