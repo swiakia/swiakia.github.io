@@ -746,6 +746,7 @@ h2 a {
 .f{
     border-top:3px solid #000;
     padding-right:0;
+    margin:0 0 0 15px;
 }
 
 .f ul{
@@ -754,6 +755,9 @@ h2 a {
 }
 .fi{
     padding: 10px 0 10px 0;
+}
+.fi img{
+    padding:0;
 }
 .f ul a{
     color :#777;
