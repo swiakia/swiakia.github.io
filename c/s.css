@@ -136,8 +136,8 @@ h1 {
 }
 
 #menusearch {
-    margin-left: 20px;
-    margin-top: 3px;
+    /*margin-left: 20px;
+    margin-top: 3px;*/
 }
 
 .osit {
@@ -215,7 +215,7 @@ table a:hover, .coma:hover {
 }
 
 .container, .m {
-    padding-left: 0;
+    padding: 0;
 }
 
 .text-white {
@@ -364,7 +364,7 @@ label {
 }
 
 legend {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .po {
