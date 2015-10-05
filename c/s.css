@@ -257,6 +257,7 @@ table a:hover, .coma:hover {
     padding-top: 10px;
     padding-bottom: 10px;
         border-top: 1px dotted #EAEAEA;
+            margin: 30px 0 0 0;
 }
 
 .cbody {
@@ -297,8 +298,7 @@ table a:hover, .coma:hover {
     margin-top: 30px;
     font-size: .8em;
     border-top: 1px dashed #EAEAEA;   
-    padding: 10px 0 10px 0;
-    border-bottom: 2px dashed #EAEAEA; 
+    padding: 10px 0 10px 0;    
 }
 
 .rating_selection input[type=radio], .rating_selection label:first-of-type, .rating_selection span {
