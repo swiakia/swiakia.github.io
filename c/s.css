@@ -347,7 +347,7 @@ label {
 
 .rating {    
     border-style: dotted;
-    margin-top: -5px;
+    /*margin-top: -5px;*/
 }
 
 .follbloc {
