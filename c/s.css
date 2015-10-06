@@ -822,9 +822,10 @@ h2 a {
 
 .r16{
     text-align:right;
+    padding:0;
 }
 
-.r16 span{
+/*.r16 span{
         -moz-border-radius: 5em;
     -webkit-border-radius: 5em;
     border-radius: 5em;
@@ -833,4 +834,4 @@ h2 a {
     font-size: 1.2em;
     color: #fff;
     background-color: #777;
-}
+}*/
