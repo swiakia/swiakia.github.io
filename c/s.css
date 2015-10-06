@@ -256,7 +256,7 @@ table a:hover, .coma:hover {
     min-height: 30px;
     padding-top: 10px;
     border-top: 1px dotted #EAEAEA;
-    margin: 30px 0 0 0;
+    /*margin: 30px 0 0 0;*/
 }
 
 .cbody {
@@ -296,7 +296,7 @@ table a:hover, .coma:hover {
 .breadc {
     /*margin-top: 30px;*/
     font-size: .8em;
-    border-top: 1px solid #EAEAEA;
+    /*border-top: 1px solid #EAEAEA;*/
     padding: 10px 0 10px 0;
 }
 
@@ -756,7 +756,7 @@ h2 a {
 }
 */
 .rr ul {
-    padding: 10px 0 10px 0;
+    /*padding: 10px 0 10px 0;*/
     list-style: none;
     margin-bottom: 0;
 }
@@ -770,7 +770,11 @@ h2 a {
     }
 
 .ll {
-    padding: 0 0 0 30px;
+    padding: 0 30px 0 0;
+}
+
+.sb {
+    padding: 0 0 0 45px;
 }
 
 .rr {
@@ -779,32 +783,32 @@ h2 a {
     padding-top: 10px;
 }
 
-
     .rr ul li {
         display: inline-block;
+        border-right: 1px solid #D6D6D6;
+        margin-right: 10px;
+        padding-right: 12px;
+        white-space: nowrap;
     }
 
         .rr ul li a {
-            border-right: 1px solid #D6D6D6;
-            margin-right: 10px;
-            padding-right: 12px;
-            white-space: nowrap;
-            font-size: .8em;
             color: #777;
         }
 
-            .rr ul li a:last-child {
-                border: medium none;
-                margin: 0px;
-                padding: 0px;
-            }
+        .rr ul li:last-child {
+            border: medium none;
+            margin: 0px;
+            padding: 0px;
+        }
 
 .ya-page_js_yes .ya-site-form_inited_no {
     display: none;
 }
-.uu{
-     text-transform: lowercase;
+
+.uu {
+    text-transform: lowercase;
 }
+
 .breadc a {
-    color:#777;
+    color: #777;
 }
