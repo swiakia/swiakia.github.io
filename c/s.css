@@ -244,7 +244,7 @@ table a:hover, .coma:hover {
     margin: 10px 0 0;
 }
 
-.yndex_soc {    
+.yndex_soc {
     padding-top: 6px;
 }
 
@@ -252,11 +252,11 @@ table a:hover, .coma:hover {
     text-align: center;
 }
 
-.cont-footer {    
-    min-height: 30px;   
-    padding-top: 10px;    
-        border-top: 1px dotted #EAEAEA;
-            margin: 30px 0 0 0;
+.cont-footer {
+    min-height: 30px;
+    padding-top: 10px;
+    border-top: 1px dotted #EAEAEA;
+    margin: 30px 0 0 0;
 }
 
 .cbody {
@@ -290,14 +290,14 @@ table a:hover, .coma:hover {
 
 .otDT {
     color: #888;
-    font-size:.8em;
+    font-size: .8em;
 }
 
 .breadc {
     /*margin-top: 30px;*/
     font-size: .8em;
-    border-top: 1px dashed #EAEAEA;   
-    padding: 10px 0 10px 0;    
+    border-top: 1px dashed #EAEAEA;
+    padding: 10px 0 10px 0;
 }
 
 .rating_selection input[type=radio], .rating_selection label:first-of-type, .rating_selection span {
@@ -317,8 +317,8 @@ table a:hover, .coma:hover {
         content: "★";
         font-size: 1.8em;
         color: #e9cd10;
-            margin-bottom: -6px;
-    margin-top: -3px;
+        margin-bottom: -6px;
+        margin-top: -3px;
     }
 
 .rating_selection input:checked + label ~ label:before {
@@ -347,7 +347,7 @@ label {
     margin-top: -5px;
 }
 
-.rating {    
+.rating {
     border-style: dotted;
     /*margin-top: -5px;*/
 }
@@ -571,12 +571,12 @@ div.prl:hover {
 
 .prz a.ba {
     padding: 0 0 10px 10px;
-    display:block;
+    display: block;
 }
 
     .prl a.ba span, .prz a.ba span, .prz .comz {
         text-transform: initial;
-        color: #B5B5B5;       
+        color: #B5B5B5;
         letter-spacing: 0px;
         line-height: 15px;
         padding: 0px;
@@ -593,15 +593,16 @@ div.prl:hover {
     padding: 10px 0 10px 10px;
 }
 
-.prz .pri{
-    padding-right:5px;
+.prz .pri {
+    padding-right: 5px;
 }
 
-.prz .sts{
-    padding-left:5px;
+.prz .sts {
+    padding-left: 5px;
 }
-.prz .coma{
-    margin-left:10px;
+
+.prz .coma {
+    margin-left: 10px;
 }
 
 
@@ -729,10 +730,10 @@ h2 a {
 }
 
 .item {
-    display: inline-block;   
+    display: inline-block;
     width: 100%;
     margin-bottom: 20px;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
 .well {
@@ -740,46 +741,59 @@ h2 a {
     display: block;
 }
 
-.well img{
-    max-width: 14em;
-}
+    .well img {
+        max-width: 14em;
+    }
 
-.ss{
+.ss {
     padding-bottom: 10px;
 }
 
-.f{
-    border-top:1px dotted #EAEAEA;
+.f {
+    border-top: 1px dotted #EAEAEA;
     /*padding-right:0;
     margin:0 0 0 15px;*/
 }
 
-.f ul{
+    .f ul {
+        padding: 10px 0 10px 0;
+        list-style: none;
+    }
+
+.fi {
     padding: 10px 0 10px 0;
-    list-style: none;
-}
-.fi{
-    padding: 10px 0 10px 0;
-}
-.fi img{
-    padding:0;
-}
-.f ul a{
-    color :#777;
-    font-weight:bold;
-    font-size:.9em;
-}
-.ll{
-        padding: 0 0 0 30px;
-}
-.rr{
-    border-top:1px solid #000;
-    font-size:.8em
-}
-.f ul li{
-    display:inline-block;
 }
 
-  .ya-page_js_yes .ya-site-form_inited_no {
-                        display: none;
-                    }
+    .fi img {
+        padding: 0;
+    }
+
+.f ul a {
+    color: #777;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.ll {
+    padding: 0 0 0 30px;
+}
+
+.rr {
+    border-top: 1px solid #000;
+    font-size: .8em;
+}
+
+.f ul li {
+    display: inline-block;
+}
+
+    .f ul li a {
+        border-right: 1px solid #D6D6D6;
+        margin-right: 10px;
+        padding-right: 12px;
+        white-space: nowrap;
+    }
+
+.ya-page_js_yes .ya-site-form_inited_no {
+    display: none;
+}
