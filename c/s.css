@@ -776,6 +776,9 @@ h2 a {
     border-top:1px solid #000;
     font-size:.8em
 }
+.f ul li{
+    display:inline-block;
+}
 
   .ya-page_js_yes .ya-site-form_inited_no {
                         display: none;
