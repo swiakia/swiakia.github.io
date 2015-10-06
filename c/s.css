@@ -845,6 +845,10 @@ h2 a {
     height:22px;
 }
 
+.h3 a,.fpc a{
+    color:#777;
+}
+
 /*.r16 span{
         -moz-border-radius: 5em;
     -webkit-border-radius: 5em;
