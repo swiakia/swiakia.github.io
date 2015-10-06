@@ -284,6 +284,10 @@ table a:hover, .coma:hover {
 transform: scale(1.03, 1.03);
 }
 
+#righimg a:last-child img:hover{
+transform: none;
+}
+
 .ot {
     margin-top: 20px;
 }
