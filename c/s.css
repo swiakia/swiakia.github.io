@@ -279,6 +279,9 @@ table a:hover, .coma:hover {
 #righimg {
     margin-bottom: 20px;
 }
+#righimg img:hover{
+transform: scale(1.03, 1.03);
+}
 
 .ot {
     margin-top: 20px;
