@@ -749,7 +749,7 @@ h2 a {
 }
 
 .f{
-    border-top:1px solid #000;
+    border-top:1px dotted #EAEAEA;
     /*padding-right:0;
     margin:0 0 0 15px;*/
 }
@@ -771,6 +771,9 @@ h2 a {
 }
 .ll{
         padding: 0 0 0 30px;
+}
+.rr{
+    border-top:1px solid #000;
 }
 
   .ya-page_js_yes .ya-site-form_inited_no {
