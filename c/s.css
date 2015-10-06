@@ -294,7 +294,7 @@ table a:hover, .coma:hover {
 }
 
 .breadc {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     font-size: .8em;
     border-top: 1px dashed #EAEAEA;   
     padding: 10px 0 10px 0;    
