@@ -758,6 +758,7 @@ h2 a {
     .f ul {
         padding: 10px 0 10px 0;
         list-style: none;
+        margin-bottom:0;
     }
 
 .fi {
@@ -770,8 +771,8 @@ h2 a {
 
 .f ul a {
     color: #777;
-    font-weight: bold;
-    font-size: .9em;
+    /*font-weight: bold;*/
+    font-size: .8em;
 }
 
 .ll {
@@ -781,7 +782,9 @@ h2 a {
 .rr {
     border-top: 1px solid #000;
     font-size: .8em;
+    padding-top:10px;
 }
+
 
 .f ul li {
     display: inline-block;
