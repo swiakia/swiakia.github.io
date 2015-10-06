@@ -138,6 +138,7 @@ h1 {
 #menusearch {
     /*margin-left: 20px;
     margin-top: 3px;*/
+        padding: 0 0 0 30px;
 }
 
 .osit {
@@ -774,13 +775,19 @@ h2 a {
 }
 
 .sb {
-    padding: 0 0 0 45px;
+    padding: 0 0 0 76px;
 }
 
 .rr {
     border-top: 2px solid #000;
     font-size: .8em;
     padding-top: 10px;
+}
+.rr span{
+    color: #777;
+}
+.rr ul{
+    padding: 0;
 }
 
     .rr ul li {
@@ -810,5 +817,5 @@ h2 a {
 }
 
 .breadc a {
-    color: #777;
+    color: #636363;
 }
