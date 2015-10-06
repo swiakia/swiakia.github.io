@@ -823,3 +823,14 @@ h2 a {
 .r16{
     text-align:right;
 }
+
+.r16 span{
+        -moz-border-radius: 5em;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+    border: 1px solid #777;
+    padding: 5px 2px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #777;
+}
