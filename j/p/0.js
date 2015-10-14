@@ -9,6 +9,7 @@ var reformalOptions = {
     tab_border_width: 2
 };
 function preloader() {
+    if (document.images) {
 
         if (window.screen.availWidth <= 480) {
 
@@ -62,6 +63,8 @@ function preloader() {
             a.appendChild(img);
             document.getElementById('righimg').appendChild(a);
         }
+
+    }
 
 
 }
@@ -212,8 +215,23 @@ function fav(a) {
     }
     return false;
 }
-preloader();
-preCouImg();
-preRelImg();
-preContImg();
-preBrandImg();
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
+    }
+}
+
+addLoadEvent(preloader);
+addLoadEvent(preCouImg);
+addLoadEvent(preRelImg);
+addLoadEvent(preContImg);
+addLoadEvent(preBrandImg);
