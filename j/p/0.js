@@ -105,12 +105,6 @@ function preBrandImg() {
     }
 }
 
-//function removePre() {
-//    var el = document.getElementById('al');
-//    el.parentNode.removeChild(el);
-//}
-
-
 function addLink(event) {
     event.preventDefault();
 
