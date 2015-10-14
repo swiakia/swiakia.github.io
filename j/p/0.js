@@ -51,13 +51,13 @@ function preloader() {
 
         for (var i = 0; i < arImg.length; i++) {
             var a = document.createElement('a');
-            a.href = 'http://кликай-тут.рф/wiakia/227.html';
+            a.href = 'http://РєР»РёРєР°Р№-С‚СѓС‚.СЂС„/wiakia/227.html';
             a.rel = 'nofollow';
             a.target = '_blank';
             var img = document.createElement('img');
             img.src = arImg[i];
             img.className = 'img-responsive';
-            // Если загрузилось последние
+            // Р•СЃР»Рё Р·Р°РіСЂСѓР·РёР»РѕСЃСЊ РїРѕСЃР»РµРґРЅРёРµ
             //if (i == arImg - 1) img.onload =
 
             a.appendChild(img);
@@ -80,15 +80,15 @@ function preRelImg() {
 
 function preContImg() {
     var ec = document.getElementsByClassName('ec');
-    // Добовляем изображение вналичии  в характеристики
+    // Р”РѕР±РѕРІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёРµ РІРЅР°Р»РёС‡РёРё  РІ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё
     for (var z = 0; z < ec.length; z++) {
         ec[z].innerHTML = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0Y0MENEM0NGNkI2MTFFMzgwMkFFMjZGOUJFOUIxNTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0Y0MENEM0RGNkI2MTFFMzgwMkFFMjZGOUJFOUIxNTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozRjQwQ0QzQUY2QjYxMUUzODAyQUUyNkY5QkU5QjE1NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozRjQwQ0QzQkY2QjYxMUUzODAyQUUyNkY5QkU5QjE1NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgfXJawAAAE0SURBVHjaYvz//z8DDDBOZ1QEUqlA7ADESlDhh0B8BIhn/M/8fxuuFqYRqCkGSE0AYmEG7OAjEFcANc+AawRqigSylzEQB9KAmmczMkxjkAJyLgOxEJEavwKxAROQSCRC0z8g7gJikB+5gTgbpDGICE1JQOeVA+ndUDE7kEY5JEV3gHgDFk0LgeFQAg1xEJBjgkrCwCSgokAgPReI/4C8AdVUCGR3AzErzECQxvtIGhuAiuyBilOAbBsgvQjIzwGy+9Cc/wCkcRWSACiQ1gMVmwE1nQTSRUD+ZCz+3geKDlCEXwJiKSSJ51C/ZmLR9A6I9WAJwBNkExCzEwjhv0AcCXTNapBTGYCM7UDKF5oucYEXQBwM0oSSVqHpVQxIRQFxCBArg4RAAQF19iKgpmcwtQABBgDNkGzkVV5eEQAAAABJRU5ErkJggg = =" />';
     }
 }
 
 function preCouImg() {
-    // Добовляем изображения флага для характеристики
-    var cImg = ['<img class="ic" alt="Таиланд" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNkZTEwMTgiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMTAwaDkwMHY0MDBoLTkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDI0N2QiIGQ9Im0wLDIwMGg5MDB2MjAwaC05MDB6Ii8+DQo8L3N2Zz4NCg==" /><span class="instok">Таиланд</span>','<img class="ic" alt="Франция" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K"/><span class="instok">Франция</span>'];
+    // Р”РѕР±РѕРІР»СЏРµРј РёР·РѕР±СЂР°Р¶РµРЅРёСЏ С„Р»Р°РіР° РґР»СЏ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРєРё
+    var cImg = ['<img class="ic" alt="РўР°РёР»Р°РЅРґ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNkZTEwMTgiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMTAwaDkwMHY0MDBoLTkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDI0N2QiIGQ9Im0wLDIwMGg5MDB2MjAwaC05MDB6Ii8+DQo8L3N2Zz4NCg==" /><span class="instok">РўР°РёР»Р°РЅРґ</span>','<img class="ic" alt="Р¤СЂР°РЅС†РёСЏ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K"/><span class="instok">Р¤СЂР°РЅС†РёСЏ</span>','<img class="ic" alt="Р¤СЂР°РЅС†РёСЏ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K"/><span class="instok">Р¤СЂР°РЅС†РёСЏ</span>'];
 
     for (var q = 0; q < cImg.length; q++) {
         document.getElementById('c' + q).innerHTML = cImg[q];
@@ -97,8 +97,8 @@ function preCouImg() {
 
 function preBrandImg() {
     var bImg = [
-        '<img class="ib" alt="nana richi" src="//farm6.staticflickr.com/5623/21161546440_46ab4b3a99_t.jpg" /><a title="посмотреть все модели бренда nana richi" target="_blank" href="#brand">Nana Richi</a>',
-        '<img class="ib" alt="nana richi" src="//farm6.staticflickr.com/5623/21161546440_46ab4b3a99_t.jpg" /><a title="посмотреть все модели бренда nana richi" target="_blank" href="#brand">Nana Richi</a>'
+        '<img class="ib" alt="nana richi" src="//farm6.staticflickr.com/5623/21161546440_46ab4b3a99_t.jpg" /><a title="РїРѕСЃРјРѕС‚СЂРµС‚СЊ РІСЃРµ РјРѕРґРµР»Рё Р±СЂРµРЅРґР° nana richi" target="_blank" href="#brand">Nana Richi</a>',
+        '<img class="ib" alt="nana richi" src="//farm6.staticflickr.com/5623/21161546440_46ab4b3a99_t.jpg" /><a title="РїРѕСЃРјРѕС‚СЂРµС‚СЊ РІСЃРµ РјРѕРґРµР»Рё Р±СЂРµРЅРґР° nana richi" target="_blank" href="#brand">Nana Richi</a>'
     ];
     for (var b = 0; b < bImg.length; b++) {
         document.getElementById('b' + b).innerHTML = bImg[b];
@@ -114,7 +114,7 @@ function preBrandImg() {
 function addLink(event) {
     event.preventDefault();
 
-    var pagelink = '<div style="position: absolute; bottom: 0px; left: -9999px;"><a href="' + document.location.href + '">источник</a></div>',
+    var pagelink = '<div style="position: absolute; bottom: 0px; left: -9999px;"><a href="' + document.location.href + '">РёСЃС‚РѕС‡РЅРёРє</a></div>',
         copytext = window.getSelection() + pagelink;
 
     (event.clipboardData || window.clipboardData).setData('Text', copytext);
@@ -185,7 +185,7 @@ for (var k = 0; k < e.length; k++) {
         if (i != 'null' && i != '') fbQuery = 's=100&p[url]=' + u + '&p[title]=' + t + '&p[summary]=' + d + '&p[images][0]=' + i;
         var vkImage = '';
         if (i != 'null' && i != '') vkImage = '&image=' + i;
-        var s = new Array('"" onclick="return fav(this);" title="Сохранить в избранное браузера"', '"#" data-count="twi" onclick="window.open(\'https://twitter.com/intent/tweet?text=' + t + '&url=' + u + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Добавить в Twitter"', '"#" data-count="mail" onclick="window.open(\'http://connect.mail.ru/share?url=' + u + '&title=' + t + '&description=' + d + '&imageurl=' + i + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Поделиться в Моем Мире@Mail.Ru"', '"http://www.livejournal.com/update.bml?event=' + u + '&subject=' + t + '" title="Опубликовать в LiveJournal"', '"http://share.yandex.ru/go.xml?service=moikrug&url=' + u + '&title=' + t + '&description=' + d + '" title="Поделиться в Мой Круг"', '"#" data-count="vk" onclick="window.open(\'http://vk.com/share.php?url=' + u + '&title=' + t + vkImage + '&description=' + d + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Поделиться В Контакте"', '"#" data-count="fb" onclick="window.open(\'http://www.facebook.com/sharer.php?m2w&' + fbQuery + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Поделиться в Facebook"', '"#" data-count="gplus" onclick="window.open(\'https://plus.google.com/share?url=' + u + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Поделиться в Google+"');
+        var s = new Array('"" onclick="return fav(this);" title="РЎРѕС…СЂР°РЅРёС‚СЊ РІ РёР·Р±СЂР°РЅРЅРѕРµ Р±СЂР°СѓР·РµСЂР°"', '"#" data-count="twi" onclick="window.open(\'https://twitter.com/intent/tweet?text=' + t + '&url=' + u + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="Р”РѕР±Р°РІРёС‚СЊ РІ Twitter"', '"#" data-count="mail" onclick="window.open(\'http://connect.mail.ru/share?url=' + u + '&title=' + t + '&description=' + d + '&imageurl=' + i + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="РџРѕРґРµР»РёС‚СЊСЃСЏ РІ РњРѕРµРј РњРёСЂРµ@Mail.Ru"', '"http://www.livejournal.com/update.bml?event=' + u + '&subject=' + t + '" title="РћРїСѓР±Р»РёРєРѕРІР°С‚СЊ РІ LiveJournal"', '"http://share.yandex.ru/go.xml?service=moikrug&url=' + u + '&title=' + t + '&description=' + d + '" title="РџРѕРґРµР»РёС‚СЊСЃСЏ РІ РњРѕР№ РљСЂСѓРі"', '"#" data-count="vk" onclick="window.open(\'http://vk.com/share.php?url=' + u + '&title=' + t + vkImage + '&description=' + d + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="РџРѕРґРµР»РёС‚СЊСЃСЏ Р’ РљРѕРЅС‚Р°РєС‚Рµ"', '"#" data-count="fb" onclick="window.open(\'http://www.facebook.com/sharer.php?m2w&' + fbQuery + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="РџРѕРґРµР»РёС‚СЊСЃСЏ РІ Facebook"', '"#" data-count="gplus" onclick="window.open(\'https://plus.google.com/share?url=' + u + '\', \'_blank\', \'scrollbars=0, resizable=1, menubar=0, left=100, top=100, width=550, height=440, toolbar=0, status=0\');return false" title="РџРѕРґРµР»РёС‚СЊСЃСЏ РІ Google+"');
         var l = '';
         for (j = 0; j < s.length; j++) l += '<a rel="nofollow" style="display:inline-block;vertical-align:bottom;width:32px;height:32px;margin:0 6px 6px 0;padding:0;outline:none;background:url(' + '//farm6.staticflickr.com/5639/21764518630_bb5c1cbacc_o.png' + ') -' + 32 * j + 'px 0 no-repeat" href=' + s[j] + ' target="_blank"></a>';
         e[k].innerHTML = '<span id="share42">' + l + '</span>';
@@ -209,7 +209,7 @@ function fav(a) {
                 return true;
             }
             else {
-                alert('Нажмите Ctrl-D, чтобы добавить страницу в закладки');
+                alert('РќР°Р¶РјРёС‚Рµ Ctrl-D, С‡С‚РѕР±С‹ РґРѕР±Р°РІРёС‚СЊ СЃС‚СЂР°РЅРёС†Сѓ РІ Р·Р°РєР»Р°РґРєРё');
             }
         }
     }
