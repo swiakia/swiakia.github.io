@@ -9,7 +9,6 @@ var reformalOptions = {
     tab_border_width: 2
 };
 function preloader() {
-    if (document.images) {
 
         if (window.screen.availWidth <= 480) {
 
@@ -63,8 +62,6 @@ function preloader() {
             a.appendChild(img);
             document.getElementById('righimg').appendChild(a);
         }
-
-    }
 
 
 }
