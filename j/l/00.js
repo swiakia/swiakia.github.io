@@ -39,18 +39,6 @@ function preloader() {
 
 }
 
-function preCouImg() {
-    // Добовляем изображения флага для характеристики
-    var cTai = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNkZTEwMTgiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMTAwaDkwMHY0MDBoLTkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDI0N2QiIGQ9Im0wLDIwMGg5MDB2MjAwaC05MDB6Ii8+DQo8L3N2Zz4NCg==';
-    var cFr = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNlZDI5MzkiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMGg2MDB2NjAwaC02MDB6Ii8+DQo8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJtMCwwaDMwMHY2MDBoLTMwMHoiLz4NCjwvc3ZnPg0K';
-    var cImg = ['<img class="ic" alt="Таиланд" src="'+cTai+'" /><span class="instok">Таиланд</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>','<img class="ic" alt="Франция" src="'+cFr+'"/><span class="instok">Франция</span>'];
-
-    for (var q = 0; q < cImg.length; q++) {
-        document.getElementById('c' + q).innerHTML = cImg[q];
-    }
-}
-
-
 function addLink(event) {
     event.preventDefault();
 
@@ -171,4 +159,3 @@ function addLoadEvent(func) {
 }
 
 addLoadEvent(preloader);
-addLoadEvent(preCouImg);
