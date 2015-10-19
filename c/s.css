@@ -391,7 +391,7 @@ legend {
     color: #777;
 }
 
-.page-numbers:hover {
+a.page-numbers:hover {
     color: #000;
 }
 
