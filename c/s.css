@@ -779,7 +779,7 @@ h2 a {
 }
 
 .ll {
-    padding: 0 30px 0 0;
+    padding: 0 0 0 30px;
 }
 
 .sb {
@@ -862,7 +862,10 @@ h3 a, .fpc a {
     margin-top: 0;
     border: none;
 }
-
+.nl{
+    padding-top: 7px;
+    font-size: 1.6em;
+}
 /*.r16 span{
         -moz-border-radius: 5em;
     -webkit-border-radius: 5em;
