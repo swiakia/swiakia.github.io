@@ -391,6 +391,10 @@ legend {
     color: #777;
 }
 
+.page-numbers:hover {
+    color: #000;
+}
+
 span.current {
     background: #777;
     color: #fff;
