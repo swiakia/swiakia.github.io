@@ -866,6 +866,9 @@ h3 a, .fpc a {
     padding-top: 7px;
     font-size: 1.6em;
 }
+#menusearch2{
+    padding: 3px 0 0 15px;
+}
 /*.r16 span{
         -moz-border-radius: 5em;
     -webkit-border-radius: 5em;
