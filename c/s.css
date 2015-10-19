@@ -855,7 +855,9 @@ h3 a, .fpc a {
     border-bottom: 1px solid #EAEAEA;
     padding-bottom: 20px;
 }
-
+.l6{
+    margin: 15px 0 15px 0;
+}
 .prr h2 {
     margin-top: 0;
     border: none;
