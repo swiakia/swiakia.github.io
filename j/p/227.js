@@ -87,7 +87,7 @@ function preCouImg() {
 }
 
 function preBrandImg() {
-    ''
+    var bImg = [''];
     for (var b = 0; b < bImg.length; b++) {
         var vB = document.getElementById('b' + b);
         if (vB != null)
