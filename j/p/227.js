@@ -61,7 +61,9 @@ function preRelImg() {
     for (var j = 0; j < rImg.length; j++) {
         var ri = document.createElement('img');
         ri.src = rImg[j];
-        document.getElementById('ri' + j).appendChild(ri);
+        var vRi = document.getElementById('ri' + j);
+        if (vRi != null)
+            vRi.appendChild(ri);
     }
 }
 
@@ -74,18 +76,22 @@ function preContImg() {
 }
 
 function preCouImg() {
-        var th = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNkZTEwMTgiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMTAwaDkwMHY0MDBoLTkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDI0N2QiIGQ9Im0wLDIwMGg5MDB2MjAwaC05MDB6Ii8+DQo8L3N2Zz4NCg==';
-        var cImg = ['<img class="ic" alt="Таиланд" src="'+th+'" /><span class="instok">Таиланд</span>',];
+    var th = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj4NCjxwYXRoIGZpbGw9IiNkZTEwMTgiIGQ9Im0wLDBoOTAwdjYwMGgtOTAweiIvPg0KPHBhdGggZmlsbD0iI2ZmZiIgZD0ibTAsMTAwaDkwMHY0MDBoLTkwMHoiLz4NCjxwYXRoIGZpbGw9IiMwMDI0N2QiIGQ9Im0wLDIwMGg5MDB2MjAwaC05MDB6Ii8+DQo8L3N2Zz4NCg==';
+    var cImg = ['<img class="ic" alt="Таиланд" src="'+th+'" /><span class="instok">Таиланд</span>',];
 
     for (var q = 0; q < cImg.length; q++) {
-        document.getElementById('c' + q).innerHTML = cImg[q];
+        var cQ = document.getElementById('c' + q);
+        if (cQ != null)
+            cQ.innerHTML = cImg[q];
     }
 }
 
 function preBrandImg() {
     [varbImg]
     for (var b = 0; b < bImg.length; b++) {
-        document.getElementById('b' + b).innerHTML = bImg[b];
+        var vB = document.getElementById('b' + b);
+        if (vB != null)
+            vB.innerHTML = bImg[b];
     }
 }
 
