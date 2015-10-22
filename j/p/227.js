@@ -46,7 +46,7 @@ function preloader() {
             a.target = '_blank';
             var img = document.createElement('img');
             img.src = arImg[i];
-            img.className = 'img-responsive ib';
+            img.className = 'img-responsive';
             a.appendChild(img);
             document.getElementById('righimg').appendChild(a);
         }
@@ -87,7 +87,7 @@ function preCouImg() {
 }
 
 function preBrandImg() {
-    [varbImg]
+    ''
     for (var b = 0; b < bImg.length; b++) {
         var vB = document.getElementById('b' + b);
         if (vB != null)
