@@ -12,7 +12,7 @@ function preloader() {
     if (document.images) {
 
         if (window.screen.availWidth <= 480) {
-            var arImg = ['//wiakia.com/ip/20831.jpg','//wiakia.com/ip/20832.jpg','//wiakia.com/ip/20833.jpg','//wiakia.com/ip/20834.jpg','//wiakia.com/ip/20835.jpg'];
+            var arImg = ['//farm6.staticflickr.com/5793/20726951184_456592f99b_n.jpg','//farm1.staticflickr.com/582/21161537870_633f4cf1a6_n.jpg','//farm6.staticflickr.com/5786/21161788588_844d884e46_n.jpg','//farm1.staticflickr.com/723/21162749529_c270e6a9f5_n.jpg','//farm1.staticflickr.com/612/20728525153_afc9a56480_n.jpg'];
         } else {
             var arImg = ['//farm6.staticflickr.com/5793/20726951184_d04f6425f2_o.jpg','//farm1.staticflickr.com/582/21161537870_765cf1121a_o.jpg','//farm6.staticflickr.com/5786/21161788588_fafcf80ce0_o.jpg','//farm1.staticflickr.com/723/21162749529_15cffe21f0_o.jpg','//farm1.staticflickr.com/612/20728525153_3cf86f4abf_o.jpg'];
 
