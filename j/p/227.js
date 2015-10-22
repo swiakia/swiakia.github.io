@@ -46,7 +46,7 @@ function preloader() {
             a.target = '_blank';
             var img = document.createElement('img');
             img.src = arImg[i];
-            img.className = 'img-responsive';
+            img.className = 'img-responsive ib';
             a.appendChild(img);
             document.getElementById('righimg').appendChild(a);
         }
