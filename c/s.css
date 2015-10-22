@@ -300,10 +300,11 @@ table a:hover, .coma:hover {
 }
 
 .otDT {
-    color: #888;
-    font-size: .8em;
+    color: #888;    
 }
-
+.otDate{
+	font-size: .8em;
+}
 .breadc {
     /*margin-top: 30px;*/
     font-size: .8em;
