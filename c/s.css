@@ -178,17 +178,13 @@ h1 {
     margin-right: 10px;
 }
 .ic {
-    height: 20px;
+    height: 26px;
     margin-right: 10px;
 }
 
 .osid {
     background-position: 0 5px;
     width: 62px;
-}
-
-.ic {
-    width: 3%;
 }
 
 table a, .coma {
