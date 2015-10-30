@@ -173,8 +173,12 @@ h1 {
     height: 39px;
 }
 
-.ib, .ic {
+.ib {
     height: 30px;
+    margin-right: 10px;
+}
+.ic {
+    height: 20px;
     margin-right: 10px;
 }
 
