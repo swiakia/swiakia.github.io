@@ -25,14 +25,7 @@ function preloader() {
                 (w[c] || (w[c] = [])).push(function () {
                     Ya.Site.Form.init()
                 })
-            })(window, document, 'yandex_site_callbacks');
-            (function () {
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.async = true;
-                script.src = '//s.wiakia.com/j/reformal.js';
-                document.getElementsByTagName('head')[0].appendChild(script);
-            })();
+            })(window, document, 'yandex_site_callbacks');           
         }
     }
 
