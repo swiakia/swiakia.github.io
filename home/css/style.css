@@ -1332,5 +1332,9 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
             opacity: 0;
           }
 
-
+.h1n{
+	border: medium none;
+font-size: 1.6em;
+text-align: right;
+}
 
