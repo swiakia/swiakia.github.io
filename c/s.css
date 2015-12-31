@@ -282,14 +282,17 @@ table a:hover, .coma:hover {
     margin-bottom: 20px;
 }
 
-#righimg img:hover, .buynow img:hover {
+/*
+#righimg img:hover,
+*/
+.buynow img:hover {
     transform: scale(1.03, 1.03);
 }
 
-#righimg a:last-child img:hover {
+/*#righimg a:last-child img:hover {
     transform: none;
 }
-
+*/
 .ot {
     margin-top: 20px;
 }
