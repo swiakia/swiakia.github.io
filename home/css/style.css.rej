@@ -1,0 +1,10 @@
+diff a/home/css/style.css b/home/css/style.css	(rejected hunks)
+@@ -555,7 +555,7 @@
+ }
+ .csslider1 > .cs_play_pause > label:after{
+   display: block;
+-  font: 20px "cs-ctrl-speed";
++  font: 20px;
+   text-align: center;
+   line-height: 44px;
+   color: #fff;

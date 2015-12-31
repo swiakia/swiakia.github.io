@@ -1,8 +1,8 @@
 
 /* ------------- General ------------- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic);
-/*@font-face {
-	font-family:;
+@font-face {
+	font-family: "cs-ctrl-speed";
 	src: url("cs-ctrl-speed.eot");
 	src: url("cs-ctrl-speed.eot#iefix") format("embedded-opentype"),
 			url("cs-ctrl-speed.woff") format("woff"),
@@ -10,15 +10,12 @@
 			url("cs-ctrl-speed.svg#speed") format("svg");
 	font-weight: normal;
 	font-style: normal;
-}*/
+}
 
 .csslider1 {
   display: inline-block;
-  position: relative;
-  
-  height: 500px;
-  
-
+  position: relative;  
+  height: 500px; 
   width: 100%;
 }
 .csslider1,
@@ -470,7 +467,7 @@
 .csslider1 > .cs_arrowprev > label:after,
 .csslider1 > .cs_arrownext > label:after {
   display: block;
-  font: 28px;
+  font: 28px "cs-ctrl-speed";
   text-align: center;
   line-height: 42px;
   color: #fff;
@@ -555,7 +552,7 @@ _:-ms-input-placeholder, :root .csslider1 > .cs_arrownext > label:after {
 }
 .csslider1 > .cs_play_pause > label:after{
   display: block;
-  font: 20px;
+  font: 20px "cs-ctrl-speed";
   text-align: center;
   line-height: 44px;
   color: #fff;
